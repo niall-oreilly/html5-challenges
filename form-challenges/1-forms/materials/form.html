@@ -73,21 +73,26 @@
       <form action="form.php" method="post">
       <ul>
          <li>
-            <label for="firstName">First Name:</label>
+            <label class="field" for="firstName">First Name:</label>
             <input id="firstName" name="firstName" type="text" />
          </li>
          <li>
-            <label for="email">Email:</label>
+            <label class="field" for="email">Email:</label>
             <input type="email" id="email" name="email" />
          </li>
          <li>
-            <label for="website">Website:</label>
+            <label class="field" for="website">Website:</label>
             <input type="url" name="website" id="website" />
          </li>
          <li>
-            <label for="password">Password:</label>
+            <label class="field" for="password">Password:</label>
             <input type="password" />
          </li>
+         <fieldset>
+            <legend>My Fieldset</legend>
+            <label class="field" for="tel">Telephone:</label>
+            <input type="tel" />
+         </fieldset>
          <li>
          <button type="submit">Submit Info</button>
          </li>
