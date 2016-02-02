@@ -91,7 +91,20 @@
          <fieldset>
             <legend>My Fieldset</legend>
             <label class="field" for="tel">Telephone:</label>
-            <input type="tel" />
+            <input type="tel" pattern="/^08[0-9]{8}$/" />
+
+            <label class="field" for="passport">Passport No:</label>
+            <input type="text" pattern="/^[a-z]{2}[0-9]{7}$/" id="passport" />
+
+            <label class="field" for="eircode"> Eircode:</label>
+            <input type="text" pattern="/[^A-Z0-9]/" id="eircode" />
+
+            <label class="field" for="cc">Credit Card:</label>
+            <input type="text" pattern="\b4[0-9]{12}(?:[0-9]{3})?\b" id="cc" />
+
+            <label class="field" for="age">Age:</label>
+            <input type="number" id="age" min=12 max=85 />
+
          </fieldset>
          <li>
          <button type="submit">Submit Info</button>
